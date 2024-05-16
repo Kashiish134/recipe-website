@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border- box;
+    font-family: serif;
+}
+body
+{
+    /* background-color: #2b1d2b; */
+    color: #fff;
+     background-image: url(background.jpg);
+    background-size: auto;
+
+}
+header nav {
+    background-color: #6a3838;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    /* New code for centering horizontally */
+    position: absolute;
+    top: 20%;
+   left: 10px;
+   right: 10px;
+   bottom: 20%;
+}
+header nav h1{
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+header nav h2{
+    font-size: 30px;
+    font-weight: 480;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;  
+    margin-top: 20px;
+}
+header nav form{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+form input[type="text"]{
+    flex-grow: 1;
+    margin-right: 15px;
+}
+.searchbox,.searchbtn{
+    border: none;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    font-family: sans-serif;
+   
+}
+.searchbtn{
+    background-color: #e12012;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 202s ease-in-out;
+}
+.searchbtn:hover{
+    background-color: #c46c6c;
+
+}
+.recipe-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+   
+.image-container img {
+    width: 200px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 10%;
+    margin-top: 10px;
+    border: 5px solid black;
+}
+@media screen and (max-width:600px){
+    header nav{
+        flex-direction: column;
+    }
+    header nav form{
+        width: 80%;
+        margin-top: 20px;
+    }
+}
